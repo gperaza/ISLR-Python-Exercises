@@ -1,0 +1,31 @@
+This exercise is adapted from Dekking 6.11.
+
+Reconsider the jury example from class. Suppose the first jury member is bribed
+to vote in favor of the present candidate.
+ a) How should you now model Y_{1}? Implement a model to investigate which of
+    the two rules is less sensitive to the effect of the bribery.
+ b) The International Skating Union decided to adopt a rule similar to the
+    following: randomly discard two of the jury scores, then average the
+    remaining scores. Implement a model investigate this rule. Did you find this
+    rule to be more sensitive to the bribery than the two rules already
+    discussed, or less sensitive?
+
+This exercise is adapted from Dekking 6.11.
+
+A tiny financial model. To investigate investment strategies, consider the
+following:
+
+You can choose to invest your money in one particular stock or put it in a
+savings account. Your initial capital is $1000. The interest rate r is 0.5% per
+month and does not change. The initial stock price is $100. Your stochastic
+model for the stock price is as follows: next month the price is the same as
+this month with probability 1/2, with probability 1/4 it is 5% lower, and with
+probability 1/4 it is 5% higher. This principle applies for every new month.
+There are no transaction costs when you buy or sell stock.
+
+Your investment strategy for the next 5 years is: convert all your money to
+stock when the price drops below $95, and sell all stock and put the money
+in the bank when the stock price exceeds $110.
+
+Implement a simulation for the results of this strategy for the model given.
+Analyze this results.

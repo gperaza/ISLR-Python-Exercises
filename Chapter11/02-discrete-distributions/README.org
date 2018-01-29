@@ -1,0 +1,13 @@
+Write a function that generates random numbers from a discrete probability mass
+function. It must accept tree arguments:
+ - A list of values.
+ - A list of probabilities, such that p[i] = p(a[i])
+ - The size of the sample.
+
+Test your function by generating a large sample for the following mass function:
+| a |   1 |   3 |   4 |
+|---+-----+-----+-----|
+| p | 3/5 | 1/5 | 1/5 |
+
+A function to plot a probability mass function is provided. Please understand
+how it works. Remember you can read python documentation online.

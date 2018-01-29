@@ -1,0 +1,28 @@
+Write a function to implement the LCG. This function should take a length n, the
+parameters m, a and c as well as the seed X_{0} as input and should return a
+list X=[X_{1}, X_{2}, ... , X_{n}]. Test your function by comparing it with the
+output of lgc-1.py. Call this function random_lcg().
+
+Generate a sequence of one million random numbers with parameters m=2^{32},
+a=1103515245, and c=12345. Confirm that the distribution looks
+uniform. Experiment with samples of different size.
+
+Create a new function, based on the LCG function you created previously, to
+generate uniformed distributed random numbers between 0 and 1. Remember we
+studied the appropriate transformation in class. Call this function
+random_uniform(). Plot a histogram for 1,000,000 samples and verify the
+distribution is indeed uniform.
+
+Make four scatter plots for the points (X_{i}, X_{i+1}).
+ 1. Using the random.random() generator from the random module.
+ 2. Using your function random_uniform() with m=81, a=1 and c=8.
+ 3. Using your function random_uniform() with m=1024, a=401 and c=101.
+ 4. Using your function random_uniform() with m=2^{32}, a=1664525 and
+    c=1013904223.
+
+The first scatter plot is an example of what to expect from a good PRNG that
+outputs a sequence of random numbers that look uncorrelated. From the second
+scatter plot it is clear that each X_{i} can only be followed by exactly one
+value X_{i+1}. While the same is true for scatter plots 3 and 4, the dependence
+is much convoluted there and in particular the structure of 4 is visually
+indistinguishable from the structure of 1.

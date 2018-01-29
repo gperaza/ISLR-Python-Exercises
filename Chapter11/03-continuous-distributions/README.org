@@ -1,0 +1,16 @@
+Use the rejection algorithm to generate X~N(0,1) in two ways:
+
+1. Apply simple rejection sampling, draw the proposals from a uniform distribution.
+
+2. Draw the proposals from a standard exponential Exp(1) distribution.
+
+Compare the rejection rate between the two approaches.
+
+Tip: When sampling using the exponential as an envelope, you cannot sample from
+the complete domain (the rejection rate would be extremely high), restrict
+yourselves to the positive domain (0,Infinity) and sample from the positive side
+of the exponential. Then, whenever you accept a proposal, with probability 1/2,
+change its sign.
+
+Tip: Remember to find M such that it is as close to 1 as possible and
+M*g(x)>f(x) for all x.
